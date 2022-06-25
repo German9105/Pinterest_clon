@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+   <link rel="stylesheet" href="./pinterest.css">
+    <link rel="icon" href="logo-rojo.png">
+   
+</head>
+ <body>
+    <header>
+    
+        <div class="logo">
+            <img class="logo-p" src="logo-rojo.png" alt="">
+            <a class="inicio" href=""><span>Inicio</span></a>
+            <a class="hoy" href=""><span>Hoy</span></a>
+            <a class="crear" href=""><span>Crear</span></a>
+            <img class="bottom-1" src="./bottom-1.png" alt="">
+        </div>
+        <div class="Search_bar">
+            <div class="Background_search_bar">
+                <span class="Search_icon"><img src="./buscar.png" alt=""></span>
+                <input  class="input" type="text" placeholder="Buscar">
+            </div>
+        </div>
+        <nav class="main-nav">
+            <button><a href="#" ><img class="campana" src="./campana.png" alt=""></a></button>
+            <button><a class="conversation" href="#"><img src="./conversation.png" alt=""></a></button>
+            <button><a class="perfil" href="#"><img src="./perfil.png" alt=""></a></button>
+            <button><a class="bottom-2" href="#"><img src="./bottom-1.png" alt=""></a></button>
+        </nav>
+    </header>
+            
+            
+    <div class="grid-container">
+        <img class="grid-item" src="https://picsum.photos/750/950"width="230" height="460">
+        <img class="grid-item" src="https://picsum.photos/808/850"width="230" height="488">
+        <img class="grid-item" src="https://picsum.photos/650/700"width="230" height="489">
+        <img class="grid-item" src="https://picsum.photos/810/910"width="230" height="340">
+        <img class="grid-item" src="https://picsum.photos/908/550"width="230" height="490">
+        <img class="grid-item" src="https://picsum.photos/606/900"width="230" height="470">
+        <img class="grid-item" src="https://picsum.photos/950/666"width="230" height="425"/>
+        <img class="grid-item" src="https://picsum.photos/400/999"width="230" height="372"/>
+        <img class="grid-item" src="https://picsum.photos/700/900"width="230" height="502/"/>
+        <img class="grid-item" src="https://picsum.photos/750/960"width="230" height="470"/>
+        <img class="grid-item" src="https://picsum.photos/111/810"width="230" height="481"/>
+        <img class="grid-item" src="https://picsum.photos/650/710"width="230" height="466"/>
+        <img class="grid-item" src="https://picsum.photos/810/910"width="230" height="361"/>
+        <img class="grid-item" src="https://picsum.photos/900/511"width="230" height="453"/>
+        <img class="grid-item" src="https://picsum.photos/600/911"width="230" height="310"/>
+        <img class="grid-item" src="https://picsum.photos/950/681"width="230" height="466"/>
+        <img class="grid-item" src="https://picsum.photos/400/959"width="230" height="379"/>
+        <img class="grid-item" src="https://picsum.photos/700/910"width="230" height="470"/>
+        <img class="grid-item" src="https://picsum.photos/750/950"width="230" height="305"/>
+        <img class="grid-item" src="https://picsum.photos/800/857"width="230" height="484"/>
+        <img class="grid-item" src="https://picsum.photos/650/707"width="230" height="476"/>
+        <img class="grid-item" src="https://picsum.photos/820/917"width="230" height="487"/>
+        <img class="grid-item" src="https://picsum.photos/710/917"width="230" height="307"/>
+        <img class="grid-item" src="https://picsum.photos/930/910"width="230" height="477"/>
+        <img class="grid-item" src="https://picsum.photos/940/919"width="230" height="437"/>
+        <img class="grid-item" src="https://picsum.photos/650/707"width="230" height="406"/>
+        <img class="grid-item" src="https://picsum.photos/820/917"width="230" height="487"/>
+        <img class="grid-item" src="https://picsum.photos/710/917"width="230" height="347"/>
+        <img class="grid-item" src="https://picsum.photos/930/910"width="230" height="407"/>
+        <img class="grid-item" src="https://picsum.photos/940/919"width="230" height="510"/>
+        <img class="grid-item" src="https://picsum.photos/444/777"width="230" height="406"/>
+        <img class="grid-item" src="https://picsum.photos/888/999"width="230" height="487"/>
+        <img class="grid-item" src="https://picsum.photos/222/101"width="230" height="347"/>
+        <img class="grid-item" src="https://picsum.photos/913/555"width="230" height="407"/>
+        <img class="grid-item" src="https://picsum.photos/940/888"width="230" height="510"/>
+
+
+
+
+
+
+
+    </div>
+    
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+   
+    <script>
+        var elem = document.querySelector('.grid-container');
+        var msnry = new Masonry( elem, {
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 230,
+        gutter: 20,
+        isFitWidth: true
+        });
+    </script>
+
+   
+</body>
+</html>

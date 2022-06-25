@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 12px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.logo-p {
+    height: 30px;
+    margin: 0px 5px 0px 15px;
+}
+
+.bottom-1{
+    height: 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    
+}
+
+.logo a{
+    padding: 12px;
+    text-decoration: none;
+    font-size:large;
+    font-weight: 400;
+}
+.inicio span{
+    color: #ffffff;
+    background-color: black;
+    border-radius: 30px;
+    padding: 18px;
+}
+.hoy{
+    color: black;
+}
+.crear{
+    color: black;
+}
+
+
+.main-input{
+    min-width: 0;
+    max-height: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    
+}
+
+.main-input-contenido{
+    
+    width: 100%;
+    margin: auto;
+    border-radius: 60px;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-input-contenido:hover{
+    background-color: rgb(214, 214, 214);
+    
+}
+.main-input-contenido input:hover{
+    background-color: rgb(214, 214, 214);
+    
+}
+
+.main-input input{
+    
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(231, 231, 231);
+    outline: none;
+    padding: 18px 3px;
+    border-radius: 60px;
+
+
+}
+
+
+.main-input .icono-buscar{
+    background-image: url(img/buscar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+
+
+
+
+
+.Search_bar{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 8px;
+}
+
+.Search_icon img{
+    height: 30px;
+    padding: 5px 5px 0px 0px;
+    
+    
+}
+
+.input{
+    height: 48px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 15px;
+    border-style: none;
+    outline: none;
+    border-radius: 5000px;
+}
+
+.Background_search_bar{
+    height: 48px;
+    width: 100%;
+    border-radius: 5000px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 16px;
+}
+
+.Background_search_bar:hover{
+    background-color: #e2e2e2;
+    
+}
+.Background_search_bar:active .Search_icon img{
+    display: none;
+}
+.Background_search_bar:focus .Search_icon img{
+    display: none;
+}
+
+
+
+
+
+
+.main-nav{
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: center;
+    
+}
+
+.main-nav button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.main-nav button a{
+    color: #222222;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.main-nav a {
+    padding: 10px;
+    margin: 5px 0px 0px 0px;
+    
+}
+
+.main-nav a:hover{
+    background-color: #3a3a3a15;
+    padding: 10px;
+    margin: 5px 0px 0px 0px;
+    border-radius: 50px;
+}
+
+.main-nav img{
+    height: 25px;
+}
+
+.main-nav .bottom-2 img{
+    height: 12px;
+}
+
+
+
+
+
+
+
+@media (min-width: 100px) and (max-width: 450px){
+
+    .inicio span{
+        color: black;
+        background-color: transparent;
+        padding: 18px;
+        transition: .4s all;
+    } 
+
+    .hoy {
+        display: none;
+        transition: .4s all;
+    }
+    .crear {
+        display: none;
+        transition: .4s all;
+    }
+      .Search_bar {
+        display: none;
+        transition: .4s all;
+      }
+  }
+
+  @media (min-width: 450px) and (max-width: 650px){ 
+    .inicio span{
+        color: black;
+        background-color: transparent;
+        transition: .4s all;
+        padding: 18px;
+    }     
+    .hoy {
+        display: none;
+        transition: .4s all;
+    }
+    .crear {
+        display: none;
+        transition: .4s all;
+      }
+  }
+  .grid-container{    
+    height: 100vh;
+    width: 100%;
+    margin-top: 30px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,230px);
+    gap: 15px;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 0;
+    margin-top: 80px;
+}
+    
+.grid-item{
+    width: 230px;
+    border: transparent;
+    border-radius: 10% 10% 10% 10%;
+    margin-bottom: 35px;
+    cursor:zoom-in;
+    background-color: gold;
+    object-fit: cover;
+}  
+.grid-item:hover{
+    filter: opacity(0.9);
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+  
+    
+   
+  
+    
+
+        
+
+
+
+
+
+   
+
+
+
+
+
+    
+
+    
+  
+
+
+    
+
+
+
+
+
